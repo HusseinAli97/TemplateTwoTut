@@ -209,7 +209,7 @@ header .form i {
 /* Landing Start */
 .landing {
   min-height: 100vh;
-  background-image: url(../images/main.jpg);
+  background-image: url(../images/wall.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
