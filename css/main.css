@@ -508,3 +508,289 @@ header .form i {
   font-weight: bold;
 }
 /* portfolio end */
+/* Video */
+  .video {
+    position: relative;
+  }
+  .video::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  .video video {
+    width:100%;
+  }
+  .video .text {
+    width:100%;
+    position: absolute;
+    top: 50%;
+    background-color: var(--transParent);
+    padding: 50px;
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+@media (max-width:767px) {
+  .video .text {
+    background-color: transparent;
+    font-size: .7rem;
+  }
+  
+}
+  .video .text h2 {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .video .text p {
+    margin-bottom: 20px;
+  }
+  .video .text button {
+    background-color: purple;
+    color:white;
+    border: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+/* VideoEnd */
+/* About */
+.about {
+  padding-top: 100px;
+  overflow: hidden;
+}
+.about img {
+  position: relative;
+  bottom: -180px;
+  margin-top: -180px;
+  max-width: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-53.5%);
+  -webkit-transform: translateX(-53.5%);
+  -moz-transform: translateX(-53.5%);
+  -ms-transform: translateX(-53.5%);
+  -o-transform: translateX(-53.5%);
+}
+@media (max-width:767px) {
+  .about img {
+    bottom: -90px;
+    margin-top: -90px;
+  }
+}
+/* About End*/
+/* Stat */
+  .stats {
+    text-align:center ;
+    background-image: url(../images/awards.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .stats::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .stats .container {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .stats .container .box {
+    color: white;
+    background-color: var(--transParent);
+    padding: 50px;
+  }
+  @media (max-width:767px) {
+    .stats .container .box {
+      flex-basis: 100%;
+      border-bottom: 1px solid white;
+    }
+  }
+  @media (min-width:768px) {
+    .stats .container .box {
+      flex-basis: 50%;
+    }
+  }
+  @media (min-width:992px) {
+    .stats .container .box {
+      flex-basis: 25%;
+    }
+    .stats .container .box:not(:last-child){
+      border-right: 1px solid white;
+    }
+  }
+  .stats .container .box i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+  .stats .container .box .number{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 40px;
+  }
+  .stats .container .box p{
+    font-size: 14px;
+    font-weight: bold;
+  }
+/* Stat End */
+/* Our Skill */
+/* Testmonials */
+.our-skills {
+  
+}
+.our-skills .container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+@media (min-width:992px) {
+  .our-skills .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.our-skills .container >div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.our-skills .container >div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.our-skills .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+}
+.our-skills .box img {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@media (max-width:767px) {
+  .our-skills .box {
+  flex-direction: column;
+  align-items: center;
+  }
+  .our-skills .box img {
+    margin: 0 auto 20px;
+  }
+}
+  .our-skills .testmonials .box .text {
+    line-height: 2;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.411);
+  }
+  .our-skills .box .text p {
+    color: #777;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .our-skills .testmonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .our-skills .testmonials .bullets li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+  .our-skills .bullets li.active {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+  }
+  /* Skills */
+  .our-skills .skills .prog-holde {
+    margin-bottom: 50px;
+  }
+  .our-skills .skills .prog-holde h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .our-skills .skills .prog-holde .prog {
+    background-color: #dadadc;
+    height: 30px;
+  }
+  .our-skills .skills .prog-holde span { 
+    display: block;
+    background-color: var(--mainColor);
+    height: 100%;
+    position: relative;
+  }
+  .our-skills .skills .prog-holde  span::before{
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 2px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+  .our-skills .skills .prog-holde  span::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent transparent;
+    right: -8px;
+    top: -15px;
+
+  }
+
+
+
+
+
+/* Our Skill End */
